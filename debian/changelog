@@ -1,3 +1,12 @@
+avahi (0.8-5ubuntu5.1) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: avahi-daemon can be crashed via DBus
+    - debian/patches/CVE-2023-1981.patch: emit error if requested service
+      is not found in avahi-daemon/dbus-protocol.c.
+    - CVE-2023-1981
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 31 May 2023 09:57:11 -0400
+
 avahi (0.8-5ubuntu5) jammy; urgency=medium
 
   * No-change rebuild for ppc64el baseline bump.

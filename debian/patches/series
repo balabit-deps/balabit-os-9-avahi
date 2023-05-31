@@ -11,3 +11,4 @@ avahi-daemon-chroot-fix-bogus-assignments-in-assertions.patch
 avahi-client-fix-resource-leak.patch
 avoid-infinite-loop-in-avahi-daemon-by-handling-hup-event-in-client-work.patch
 CVE-2021-3502.patch
+CVE-2023-1981.patch
