@@ -12,3 +12,11 @@ avahi-client-fix-resource-leak.patch
 avoid-infinite-loop-in-avahi-daemon-by-handling-hup-event-in-client-work.patch
 CVE-2021-3502.patch
 CVE-2023-1981.patch
+CVE-2023-38469-1.patch
+CVE-2023-38469-2.patch
+CVE-2023-38470-1.patch
+CVE-2023-38470-2.patch
+CVE-2023-38471-1.patch
+CVE-2023-38471-2.patch
+CVE-2023-38472.patch
+CVE-2023-38473.patch

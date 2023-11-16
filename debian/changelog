@@ -1,3 +1,43 @@
+avahi (0.8-5ubuntu5.2) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: Reachable assertions exist in server functions of
+    avahi-core
+    - debian/patches/CVE-2023-38469-1.patch: reject overly long TXT 
+      resource records
+    - debian/patches/CVE-2023-38469-2.patch: tests: pass overly long TXT
+      resource records
+    - CVE-2023-38469
+
+  * SECURITY UPDATE: Reachable assertions exist in domain functions in 
+    avahi-common
+    - debian/patches/CVE-2023-38470-1.patch: Ensure each label is at least
+      one byte long
+    - debian/patches/CVE-2023-38470-2.patch: bail out when escaped labels 
+      can't fit into ret
+    - CVE-2023-38470
+
+  * SECURITY UPDATE: Reachable assertions exist in server functions in 
+    avahi-core
+    - debian/patches/CVE-2023-38471-1.patch: core: extract host name using
+      avahi_unescape_label()
+    - debian/patches/CVE-2023-38471-2.patch: core: return errors from 
+      avahi_server_set_host_name properly
+    - CVE-2023-38471
+
+  * SECURITY UPDATE: Reachable assertions exist in dbus functions in 
+    avahi-daemon
+    - debian/patches/CVE-2023-38472.patch: core: make sure there is rdata 
+      to process before parsing it
+    - CVE-2023-38472
+
+  * SECURITY UPDATE: Reachable assertions exist in alternative functions 
+    in avahi-common
+    - debian/patches/CVE-2023-38473.patch: common: derive alternative host
+      name from its unescaped version
+    - CVE-2023-38473
+
+ -- Nick Galanis <nick.galanis@canonical.com>  Thu, 16 Nov 2023 16:37:03 +0000
+
 avahi (0.8-5ubuntu5.1) jammy-security; urgency=medium
 
   * SECURITY UPDATE: avahi-daemon can be crashed via DBus
