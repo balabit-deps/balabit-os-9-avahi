@@ -1,3 +1,12 @@
+avahi (0.8-5ubuntu5.3) jammy; urgency=medium
+
+  * Do not disable timeout cleanup on watch cleanup. This was causing timeouts
+    to never be removed from the linked list that tracks them, resulting in both
+    memory and CPU usage to grow larger over time. (LP: #1799265)
+    - d/p/lp1799265-Do-not-disable-timeout-cleanup-on-watch-cleanup.patch
+
+ -- Trent Lloyd <trent.lloyd@canonical.com>  Mon, 20 Oct 2025 07:57:45 +0000
+
 avahi (0.8-5ubuntu5.2) jammy-security; urgency=medium
 
   * SECURITY UPDATE: Reachable assertions exist in server functions of
