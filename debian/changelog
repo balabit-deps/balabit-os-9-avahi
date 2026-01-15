@@ -1,3 +1,20 @@
+avahi (0.8-5ubuntu5.4) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: Denial of service when creating a record browser.
+    - debian/patches/CVE-2025-68276.patch: Add AVAHI_LOOKUP_USE_WIDE_AREA and
+      wide area use check in avahi-core/browse.c.
+    - CVE-2025-68276
+  * SECURITY UPDATE: Denial of service after CNAME expiration.
+    - debian/patches/CVE-2025-68468.patch: Remove assert in
+      avahi-core/browse.c.
+    - CVE-2025-68468
+  * SECURITY UPDATE: Denial of service on receiving CNAME resource records.
+    - debian/patches/CVE-2025-68471.patch: Change assert to return on
+      wide_area check in avahi-core/browse.c.
+    - CVE-2025-68471
+
+ -- Hlib Korzhynskyy <hlib.korzhynskyy@canonical.com>  Thu, 15 Jan 2026 15:01:39 -0330
+
 avahi (0.8-5ubuntu5.3) jammy; urgency=medium
 
   * Do not disable timeout cleanup on watch cleanup. This was causing timeouts
