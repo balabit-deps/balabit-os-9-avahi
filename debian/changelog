@@ -1,3 +1,18 @@
+avahi (0.8-5ubuntu5.5) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: Denial of Service
+    - debian/patches/CVE-2026-24401.patch: core: fix uncontrolled
+      recursion bug using a simple loop detection algorithm
+    - CVE-2026-24401
+  * SECURITY UPDATE: Denial of Service
+    - debian/patches/CVE-2026-34933-1.patch: core: refuse to accept
+      publish flags where both wide_area and multicast are set
+    - debian/patches/CVE-2026-34933-2.patch: tests: make sure
+      AVAHI_PUBLISH_USE_WIDE_AREA is refused
+    - CVE-2026-34933
+
+ -- Allen Huang <allen.huang@canonical.com>  Tue, 05 May 2026 15:36:46 +0100
+
 avahi (0.8-5ubuntu5.4) jammy-security; urgency=medium
 
   * SECURITY UPDATE: Denial of service when creating a record browser.
